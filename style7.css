@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700;800&display=swa');
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2d2c32 ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(
+        180deg,
+        rgba(43,42,48,0.5) 0%,
+        rgba(45,44,50,0.7) 100%),
+        url(images/sitios/puente-de-suspiro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #eeeff3;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #eeeff3;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #e03c48;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    width: 100%;
+}
+.header-txt h1 {
+    font-size: 120px;
+    color: #fefbf8;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.info {
+    padding: 100px 0;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.info-c {
+    display: flex;
+}
+
+h3 {
+    font-size: 25px;
+    color: #a6a5a8;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+p{
+    color: #838288;
+    font-size: 22px;
+}
+
+
+.info-txt {
+    padding-left: 25px;
+}
+
+.lugares {
+    padding: 100px 0;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background-color: #b1afb0;
+}
+
+.lugares-txt {
+    text-align: center;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2d2c32;
+    margin-bottom: 20px;
+}
+
+.lugares-txt p{
+    color: #3a3a3a;
+    margin-bottom: 35px;
+}
+
+.lugares-c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.lugares-c img {
+    padding: 10px;
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+}
+
+.comentarios {
+    padding: 50px;
+}
+
+@media(max-width:991px){
+
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2d2c32;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-c {
+        padding: 100px 30px 30px 30px;
+    }
+    
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .info-c {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lugares{
+        padding: 30px;
+    }
+
+    .cositas{
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .puente{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lugares-c {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .comentarios {
+        padding: 20px;
+    }
+
+
+}

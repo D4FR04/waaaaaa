@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2d2c32 ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(
+        180deg,
+        rgba(43,42,48,0.3) 0%,
+        rgba(45,44,50,0.8) 100%),
+        url(images/bg/bg7.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aaa {
+    color: #eeeff3;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #eeeff3;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #e03c48;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-txt {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.header-txt h1 {
+    font-size: 130px;
+    color: #fefbf8;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #e03c40;
+    color: #fefef8;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 35px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #e03c40;
+}
+.sobre {
+    padding: 100px 0;
+    padding-bottom: 30px;
+}
+.sobre-c {
+    display: flex;
+}
+
+.sobre-1{
+    width: 70%;
+}
+
+.sobre p{
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #a6a5a8;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+p{
+    color: #838288;
+    font-size: 16px;
+}
+
+.sobre-2 {
+    width: 30%;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+.sobre-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.sobre-img img {
+    width: 80px;
+    margin-bottom: 10px;
+    border-radius: 60%;
+}
+
+.sobre-txt {
+    padding-left: 25px;
+}
+
+.sobre-txt a{
+    color: #838288;
+}
+
+.sobre-txt h4{
+    font-size: 16px;
+    color: #a6a5ab;
+    text-transform: uppercase;
+}
+
+.lugares {
+    padding: 100px 0;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background-color: #b1afb0;
+}
+
+.lugares-txt {
+    text-align: center;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2d2c32;
+    margin-bottom: 20px;
+}
+
+.lugares-c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lugares-c a {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.lugares-c a img {
+    padding: 15px;
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+}
+
+.lugares-c a .texto {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+
+.lugares-c a .texto2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+
+.lugares-c a:hover > .texto {
+    opacity: 1;
+    visibility: visible;
+}
+.lugares-c a:hover > .texto2 {
+    opacity: 1;
+    visibility: visible;
+}
+.lugares-c a:hover > img {
+    transform: scale(1.1);
+}
+
+.lugares-c a:hover > .texto h1{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.lugares-c a:hover > .texto2 h1{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.lugares-c a .texto h1{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 50px;
+}
+.lugares-c a .texto2 h1{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+/*
+@keyframes animatedBackground {
+    0% {
+      background-image: url(images/sitios/kuelap.jpg);
+      background-position: 0% 0%, 100% 100%;
+      opacity: 0.5;
+    }
+    
+    20% {
+      background-image: url(images/sitios/foto04.jpg);
+      background-position: 100% 100%, 0% 0%;
+      opacity: 0.5;
+    }
+    
+    40% {
+      background-image: url(images/sitios/Catatumbas.jpg);
+      background-position: 0% 0%, 100% 100%;
+      opacity: 0.5;
+    }
+    } 
+*/
+
+.footer {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2 {
+    color: #fefbf8;
+}
+.form-group {
+    display: flex;
+}
+.campo {
+    padding: 13px 10px;
+    background-color: #b1afb0;
+    color:#fefbf8;
+    outline: none;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    border: 0;
+}
+.campo:placeholder {
+    color: #fefbf8;
+    text-transform: capitalize;
+}
+
+@media(max-width:1200px){
+
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 75%;
+        left: 0;
+        right: 0;
+        background-color: #2d2c32;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 30vh;
+    }
+
+    .header-c {
+        padding: 100px 30px 30px 30px;
+    }
+    
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 75px;
+        line-height: 100px;
+    }
+    .btn-1 {
+        margin-top: 25px;
+    }
+
+    .sobre {
+        padding: 30px;
+    }
+
+    .sobre-c {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sobre-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+    .sobre-img {
+        flex-direction: column;
+        margin-bottom: 40px;
+     }
+
+    .sobre-txt {
+        padding-left: 0;
+     }
+     
+    .lugares{
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .lugares-c {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .campo {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+
+}
